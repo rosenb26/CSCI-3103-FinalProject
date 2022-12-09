@@ -1,0 +1,1 @@
+I took out as many junk files as possible, but I included the entire Netbeans projects for the Heap and Sorting projects, because the Sorting project uses the Heap project and I want to make sure it works on your end. Yes I know it's amateurish but I could not figure out a better way that is foolproof.
