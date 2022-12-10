@@ -1,7 +1,4 @@
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.Random;
 import java.util.ArrayList;
 
@@ -196,7 +193,7 @@ public class Sorting {
         /* While perhaps not optimal, a starting gap of list.size()/2
         is recommended (by the book) as an acceptable starting gap, especially
         compared to other starting gaps (such as 1, which is equivalent to
-        an insertion sort). */
+        an insertion sort. */
         return this.shellSort(list, list.size() / 2);
     }
 
@@ -255,7 +252,7 @@ public class Sorting {
      * overloaded private method.
      *
      * @param list The list to be sorted.
-     * @return The sorted list in increasing order.
+     * @return The sorted list in increasing order.s
      */
     public ArrayList<Integer> quickSort(ArrayList<Integer> list) {
         return this.quickSort(list, 0, list.size() - 1);
