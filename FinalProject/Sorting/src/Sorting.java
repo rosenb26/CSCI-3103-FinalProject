@@ -255,7 +255,7 @@ public class Sorting {
      * overloaded private method.
      *
      * @param list The list to be sorted.
-     * @return The sorted list in increasing order.s
+     * @return The sorted list in increasing order.
      */
     public ArrayList<Integer> quickSort(ArrayList<Integer> list) {
         return this.quickSort(list, 0, list.size() - 1);
