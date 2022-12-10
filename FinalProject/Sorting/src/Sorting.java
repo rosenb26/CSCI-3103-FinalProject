@@ -40,10 +40,10 @@ public class Sorting {
      */
     public ArrayList<Integer> selectionSort(ArrayList<Integer> list) {
         for (int i = 0; i < list.size() - 1; i++) {
-            /* Assume that this is the minimum value among the unsorted elements.*/
+            /* Assume that this is the minimum value among the unsorted elements. */
             int minValue = list.get(i);
             int minIndex = i;
-            /* Compare minValue to all the elements that succeed it in the list.*/
+            /* Compare minValue to all the elements that succeed it in the list. */
             for (int j = i + 1; j < list.size(); j++) {
                 if (list.get(j) < minValue) {
                     minIndex = j;
@@ -324,7 +324,7 @@ public class Sorting {
     }
 
     /**
-     * Places the median value Of start, end, and the middle at the beginning of
+     * Places the median value of start, end, and the middle at the beginning of
      * the sublist given by start and end.
      *
      * @param list The list that contains the sublist.
