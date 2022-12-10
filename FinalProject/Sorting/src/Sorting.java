@@ -196,7 +196,7 @@ public class Sorting {
         /* While perhaps not optimal, a starting gap of list.size()/2
         is recommended (by the book) as an acceptable starting gap, especially
         compared to other starting gaps (such as 1, which is equivalent to
-        an insertion sort. */
+        an insertion sort). */
         return this.shellSort(list, list.size() / 2);
     }
 
@@ -390,20 +390,6 @@ public class Sorting {
             list.add(rng.nextInt(bound));
         }
         return list;
-    }
-
-    public void timeGenerator() throws FileNotFoundException {
-
-        PrintWriter writer = new PrintWriter(new File("heapSort.txt"));
-        for (int startSize = 1000; startSize <= 100000; startSize += 1000) {
-            ArrayList<Integer> list = this.fillRandom(startSize, 100000);
-            long start = System.currentTimeMillis();
-            this.heapSort(list);
-            long end = System.currentTimeMillis();
-            writer.println(startSize + " " + (end - start));
-        }
-        writer.close();
-
     }
 
     /**
